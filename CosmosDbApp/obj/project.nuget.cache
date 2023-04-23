@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6do8amatBCUvMuu/RaAjqLb7oXOzd64/0qSN0nzAV5Ab7Bz4PpD8+crSIWi/iGFY0MX40CYeXcuaJXdyWFTMRA==",
+  "dgSpecHash": "m9LSvEleqsX0UA+ocQg/kAzE17miUeNug3vJC1vL+O14itKmUVOvRT918lmEiJmGVuBfOW44qyvJZSv2TP/BYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\CosmosDbApp\\CosmosDbApp\\CosmosDbApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.azure.cosmos\\3.32.3\\microsoft.azure.cosmos.3.32.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

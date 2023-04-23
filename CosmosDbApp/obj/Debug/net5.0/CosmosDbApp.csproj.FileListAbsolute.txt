@@ -47,3 +47,4 @@ C:\Users\Administrator\source\repos\CosmosDbApp\CosmosDbApp\obj\Debug\net5.0\Cos
 C:\Users\Administrator\source\repos\CosmosDbApp\CosmosDbApp\obj\Debug\net5.0\ref\CosmosDbApp.dll
 C:\Users\Administrator\source\repos\CosmosDbApp\CosmosDbApp\obj\Debug\net5.0\CosmosDbApp.pdb
 C:\Users\Administrator\source\repos\CosmosDbApp\CosmosDbApp\obj\Debug\net5.0\CosmosDbApp.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\CosmosDbApp\CosmosDbApp\bin\Debug\net5.0\Bogus.dll

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "CosmosDbApp/1.0.0": {
         "dependencies": {
+          "Bogus": "34.0.2",
           "Microsoft.Azure.Cosmos": "3.32.3"
         },
         "runtime": {
@@ -30,6 +31,14 @@
           "lib/net5.0/Azure.Core.dll": {
             "assemblyVersion": "1.19.0.0",
             "fileVersion": "1.1900.21.45105"
+          }
+        }
+      },
+      "Bogus/34.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {
+            "assemblyVersion": "34.0.2.0",
+            "fileVersion": "34.0.2.0"
           }
         }
       },
@@ -1045,6 +1054,13 @@
       "sha512": "sha512-lcDjG635DPE4fU5tqSueVMmzrx0QrIfPuY0+y6evHN5GanQ0GB+/4nuMHMmoNPwEow6OUPkJu4cZQxfHJQXPdA==",
       "path": "azure.core/1.19.0",
       "hashPath": "azure.core.1.19.0.nupkg.sha512"
+    },
+    "Bogus/34.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2KQAuMn3fLAQ2r6jeiffZnpv0bi3GCW3iRB2v1KeHIEBu8MNTh9dBlLTZwGvM0pr+9doKkU8L5JgCURmTmT88A==",
+      "path": "bogus/34.0.2",
+      "hashPath": "bogus.34.0.2.nupkg.sha512"
     },
     "Microsoft.Azure.Cosmos/3.32.3": {
       "type": "package",

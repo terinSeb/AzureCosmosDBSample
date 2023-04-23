@@ -11,7 +11,10 @@ namespace CosmosDbApp
         public string id { get; set; }
         public string name { get; set; }
         public string categoryId { get; set; }
-        public string price { get; set; }
-        public string[] tags { get; set; }
+        public double price { get; set; }
+        public Product()
+        {
+
+        }
     }
 }
