@@ -18,7 +18,7 @@ namespace CosmosDbApp
             try
             {
                 string endPoint = "https://vision-archive-db.documents.azure.com:443/";
-                string key = "tR3y1YkgTAUVhLaJbCHCnmKBCCHHKYH11iQeEETISeNeyro3tQicodZEV7R82EuEqOrBLvWhFsR2ACDbFwXPnQ==";
+                string key = "123==";
                 CosmosClient client = new CosmosClient(endPoint, key);
                 AccountProperties account = await client.ReadAccountAsync();
 
