@@ -71,23 +71,38 @@ namespace CosmosDbApp
 
                 //Console.WriteLine($"Status:\t{response.StatusCode}");
 
-                List<Product> productsToInsert = new Faker<Product>()
-                  .StrictMode(true)
-                  .RuleFor(o => o.id, f => Guid.NewGuid().ToString())
-                  .RuleFor(o => o.name, f => f.Commerce.ProductName())
-                  .RuleFor(o => o.price, f => Convert.ToDouble(f.Commerce.Price(max : 1000,min : 10)))
-                  .RuleFor(o => o.categoryId, f => f.Commerce.Department(1))
-                  .Generate(100);
+                //List<Product> productsToInsert = new Faker<Product>()
+                //  .StrictMode(true)
+                //  .RuleFor(o => o.id, f => Guid.NewGuid().ToString())
+                //  .RuleFor(o => o.name, f => f.Commerce.ProductName())
+                //  .RuleFor(o => o.price, f => Convert.ToDouble(f.Commerce.Price(max : 1000,min : 10)))
+                //  .RuleFor(o => o.categoryId, f => f.Commerce.Department(1))
+                //  .Generate(100);
 
-                List<Task> concurrentTask = new List<Task>();
-                foreach(Product product in productsToInsert)
+                //List<Task> concurrentTask = new List<Task>();
+                //foreach(Product product in productsToInsert)
+                //{
+                //    concurrentTask.Add(
+                //        container.CreateItemAsync(product, new PartitionKey(product.categoryId))
+                //        );
+                //}
+
+                //await Task.WhenAll(concurrentTask);
+
+                string sql = "Select * from products p";
+                QueryDefinition query = new QueryDefinition(sql);
+
+                using FeedIterator<Product> feedIterator = container.GetItemQueryIterator<Product>(query);
+                while (feedIterator.HasMoreResults)
                 {
-                    concurrentTask.Add(
-                        container.CreateItemAsync(product, new PartitionKey(product.categoryId))
-                        );
+                    FeedResponse<Product> response = await feedIterator.ReadNextAsync();
+                    foreach(Product product in response)
+                    {
+                        Console.WriteLine("Id {0}", product.id);
+                        Console.WriteLine("CategoryId {0}", product.categoryId);
+                        Console.WriteLine("name {0}", product.name);
+                    }
                 }
-
-                await Task.WhenAll(concurrentTask);
             }
             catch (Exception ex)
             {
