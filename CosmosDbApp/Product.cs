@@ -12,9 +12,9 @@ namespace CosmosDbApp
         public string name { get; set; }
         public string categoryId { get; set; }
         public double price { get; set; }
-        public Product()
-        {
+        //public Product()
+        //{
 
-        }
+        //}
     }
 }
